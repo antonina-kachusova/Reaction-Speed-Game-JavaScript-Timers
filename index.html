@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reaction Speed Game</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="dark-theme">
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+    🌙 Dark
+  </button>
+
+  <main class="game-container">
+    <!-- Screen 1: Start -->
+    <div class="screen">
+      <h1>Shall we test your reaction?</h1>
+      <p class="subtitle">
+        Click on the circles as fast as you can before the time runs out.
+      </p>
+      <a href="#" id="start" class="btn primary">Start Game</a>
+    </div>
+
+    <!-- Screen 2: Time & Difficulty -->
+    <div class="screen">
+      <h1>Choose game duration</h1>
+      <p class="subtitle">Pick how long you want the challenge to last.</p>
+
+      <ul id="time-list" class="options-list">
+        <li><button class="time-btn btn" data-time="5">5 sec</button></li>
+        <li><button class="time-btn btn" data-time="20">20 sec</button></li>
+        <li><button class="time-btn btn" data-time="30">30 sec</button></li>
+        <li><button class="time-btn btn" data-time="40">40 sec</button></li>
+      </ul>
+
+      <h2>Choose difficulty</h2>
+      <ul id="level-list" class="options-list">
+        <li>
+          <button class="level-btn btn outlined" data-difficulty="easy">
+            Easy
+          </button>
+        </li>
+        <li>
+          <button class="level-btn btn outlined active" data-difficulty="medium">
+            Medium
+          </button>
+        </li>
+        <li>
+          <button class="level-btn btn outlined" data-difficulty="hard">
+            Hard
+          </button>
+        </li>
+      </ul>
+
+      <p class="hint">
+        You can change the difficulty any time before starting.
+      </p>
+    </div>
+
+    <!-- Screen 3: Game -->
+    <div class="screen">
+      <h3 class="timer-title">Time left: <span id="time">00:00</span></h3>
+      <div class="board" id="board"></div>
+    </div>
+  </main>
+
+  <audio id="sound-click" src="audio/key-2.mp3" preload="auto"></audio>
+  <audio id="sound-start" src="./audio/key-19.mp3" preload="auto"></audio>
+  <audio id="sound-end" src="./audio/key-20.mp3" preload="auto"></audio>
+  <audio id="sound-wrong-place" src="./audio/key-8.mp3" preload="auto"></audio>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
