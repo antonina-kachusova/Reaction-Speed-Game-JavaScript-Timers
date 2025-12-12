@@ -8,7 +8,7 @@ The goal is simple: click on the circles as fast as you can before the timer rea
 - [How to play](#how-to-play)
 - [Features](#features)
 - [What I Learned (Technical Details)](#what-i-learned-technical-details)
-- [Desktop & Mobile](#desktop-&-mobile)
+- [Desktop and Mobile](#desktop-and-mobile)
 - [Tech Stack](#tech-stack)
 - [Demo](#demo)
 - [Project Structure](#project-structure)
@@ -189,7 +189,7 @@ This prevents:
 - the grey tap highlight on buttons and the board  
 It makes the app feel more like a native mobile game rather than a typical web page.
 
-## Desktop & Mobile
+## Desktop and Mobile
 - The layout is **responsive**: it works both on large desktop screens and on small phone screens.
 - The game board scales with the viewport.
 - Circles become larger on narrow screens to keep the game playable with touch.
