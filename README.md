@@ -8,7 +8,7 @@ The goal is simple: click on the circles as fast as you can before the timer rea
 - [How to play](#how-to-play)
 - [Features](#features)
 - [What I Learned (Technical Details)](#what-i-learned-technical-details)
-- [Desktop&Mobile](#desktop-&-mobile)
+- [Desktop & Mobile](#desktop-&-mobile)
 - [Tech Stack](#tech-stack)
 - [Demo](#demo)
 - [Project Structure](#project-structure)
